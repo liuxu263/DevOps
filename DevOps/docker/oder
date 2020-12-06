@@ -20,7 +20,7 @@ docker logs -f xxx 动态获取容器的日志
 docker logs -ft xxx 为获取的日志加上时间戳
 docker top xxx 查看容器内的进程
 docker exec -d xxx（容器） xxx（命令）在运行的容器内部运行后台任务
-docker exex -i -t xxx（容器） xxx（命令） 在运行的容器内部运行交互式任务
+docker exec -i -t xxx（容器） xxx（命令） 在运行的容器内部运行交互式任务
 docker kill xxx 停止容器
 docker ps -n x 显示最后x个容器
 docker inspect xxx 获取容器详细的信息
