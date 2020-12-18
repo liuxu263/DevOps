@@ -1,0 +1,15 @@
+docker images 列出主机上可用的镜像
+docker pull xxx 拉取xxx仓库中的所有内容
+docker run -t -i --name xxx ubuntu:XXX /bin/bash 在仓库名后面加冒号和标签名来指定该仓库中的某一镜像
+docker images xxx 在镜像列表中只看xxx的内容
+docker images pull xxx:xxx 拉取指定标签的镜像
+docker search xxx 查找所有docker hub 上公共的可用镜像
+docker login 登录到docker hub
+docker commit -m ="xxx" --author="xxx" 容器ID 目标镜像仓库/镜像名:标签  提交定制容器
+docker inspect xxx/xxx:xx 查看镜像的详细信息
+docker build --no-cache(略过缓存) -t="xxx/xxx:xx" 构建新镜像，并为之设置仓库,名称和标签
+docker history xxx 查看镜像构建历史
+docker ps 查看容器的端口分配情况
+docker port 容器ID 端口号 查看端口映射情况
+docker push xxx/xxx 推送镜像到docker hub
+docker rmi xxx/xxx 删除一个镜像
